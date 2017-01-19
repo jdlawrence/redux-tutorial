@@ -55,6 +55,8 @@ var addItemActionCreator = function (item) {
 }
 
 store_0.dispatch(addItemActionCreator({ id: 1234, description: 'anything' }))
+store_0.dispatch(addItemActionCreator({ id: 1235, description: 'anything1' }))
+store_0.dispatch(addItemActionCreator({ id: 1236, description: 'anything3' }))
 
 // Output:
 //     ...

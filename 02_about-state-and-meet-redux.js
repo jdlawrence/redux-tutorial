@@ -48,7 +48,7 @@
 // Let's try again
 
 import { createStore } from 'redux'
-
+console.log('hi: ');
 var store = createStore(() => {})
 
 // Seems good for now...

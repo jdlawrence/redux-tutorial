@@ -91,7 +91,8 @@ var itemsReducer = function (state = [], action) {
 import { createStore, combineReducers } from 'redux'
 
 var reducer = combineReducers({
-    user: userReducer,
+    // user: userReducer,
+    reducer_0: reducer_0,
     items: itemsReducer
 })
 // Output:

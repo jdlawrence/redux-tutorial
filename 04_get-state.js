@@ -4,8 +4,9 @@
 
 import { createStore } from 'redux'
 
-var reducer_0 = function (state, action) {
+var reducer_0 = function (state=5, action = { type: 'COOL'}) {
     console.log('reducer_0 was called with state', state, 'and action', action)
+    return 5;
 }
 
 var store_0 = createStore(reducer_0)
@@ -26,7 +27,7 @@ console.log('store_0 state after initialization:', store_0.getState())
 
 // Let's try to send an initial state of our application if the state given to reducer is undefined:
 
-var reducer_1 = function (state, action) {
+var reducer_1 = function (state = 3, action) {
     console.log('reducer_1 was called with state', state, 'and action', action)
     if (typeof state === 'undefined') {
         return {}

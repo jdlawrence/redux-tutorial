@@ -85,6 +85,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 
 const finalCreateStore = applyMiddleware(thunkMiddleware)(createStore)
 // For multiple middlewares, write: applyMiddleware(middleware1, middleware2, ...)(createStore)
+// const finalCreateStore = applyMiddleware(discardMiddleware, thunkMiddleware)(createStore)
 
 var reducer = combineReducers({
     speaker: function (state = {}, action) {
